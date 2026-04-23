@@ -130,13 +130,13 @@
 
 <!-- 顶部标签切换 -->
 <div class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-  <div class="max-w-7xl mx-auto px-4">
+  <div class="px-4">
     <div class="flex items-center gap-1">
-      <button id="btn-market" onclick="switchTab('market')" class="tab-btn flex-1 py-3.5 text-sm font-semibold border-b-2 border-transparent text-gray-500 text-center transition-colors hover:text-gray-700">
-        <i class="fa fa-bar-chart mr-1.5"></i>上海市写字楼租赁市场数据分析
-      </button>
       <button id="btn-site" onclick="switchTab('site')" class="tab-btn active flex-1 py-3.5 text-sm font-semibold border-b-2 border-blue-600 text-blue-600 text-center transition-colors">
         <i class="fa fa-building mr-1.5"></i>MX · 上海总部选址对比
+      </button>
+      <button id="btn-market" onclick="switchTab('market')" class="tab-btn flex-1 py-3.5 text-sm font-semibold border-b-2 border-transparent text-gray-500 text-center transition-colors hover:text-gray-700">
+        <i class="fa fa-bar-chart mr-1.5"></i>上海市写字楼租赁市场数据分析
       </button>
     </div>
   </div>
@@ -146,7 +146,7 @@
 <div id="tab-market" class="tab-content">
 <!-- Header -->
     <div class="gradient-bg text-white">
-        <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="px-4 py-8">
             <div class="flex items-center justify-between">
                 <div>
                     <h1 class="text-3xl font-bold mb-2"><i class="fa fa-building-o mr-2"></i>上海市写字楼租金数据中心</h1>
@@ -160,7 +160,7 @@
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+    <div class="px-4 py-6 space-y-6">
         <!-- Key Stats -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div class="glass rounded-xl p-5 mkt-card-shadow">
@@ -309,7 +309,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
+    <div class="px-4 py-6 text-center text-gray-400 text-sm">
         <p>数据整理时间：2025年Q4 | 仅供参考，实际价格以具体项目和谈判为准</p>
     </div>
 
@@ -318,7 +318,7 @@
 
 <!-- Tab 2: Site Selection -->
 <div id="tab-site" class="tab-content active site-bg">
-<div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+<div class="px-4 py-6 space-y-6">
 
 <!-- 首屏：两物业速览对比 -->
 <div class="gradient-bg rounded-2xl p-6 text-white card-shadow">
