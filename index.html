@@ -78,33 +78,33 @@
   .route-step:last-child::before { display:none; }
   .route-dot { position:absolute; left:0; top:.4rem; width:.8rem; height:.8rem; border-radius:50%; background:#cbd5e1; border:2px solid white; box-shadow:0 0 0 2px #cbd5e1; }
   .route-step.active .route-dot { background:#667eea; box-shadow:0 0 0 2px #667eea; }
-  .metro-line { display:inline-block; padding:.08rem .4rem; border-radius:.25rem; font-size:.65rem; font-weight:700; color:white; line-height:1.2; }
+  .metro-line { display:inline-block; padding:.08rem .4rem; border-radius:.25rem; font-size:.75rem; font-weight:700; color:white; line-height:1.2; }
   .line-11 { background:#762f9b; }
   .line-12 { background:#007a33; }
   .line-2 { background:#8cc220; color:#333; }
   .line-10 { background:#c7acef; color:#333; }
-  .amap-link { display:inline-flex; align-items:center; gap:.35rem; background:#667eea; color:white; padding:.4rem .9rem; border-radius:.6rem; font-size:.8rem; font-weight:600; text-decoration:none; transition: all .2s; }
+  .amap-link { display:inline-flex; align-items:center; gap:.35rem; background:#667eea; color:white; padding:.4rem .9rem; border-radius:.6rem; font-size:.9rem; font-weight:600; text-decoration:none; transition: all .2s; }
   .amap-link:hover { background:#5a67d8; }
   .amap-link i { font-size:.85rem; }
   .score-ring { position: relative; width: 48px; height: 48px; border-radius: 50%; background: conic-gradient(var(--c) var(--p), #e2e8f0 0); display: flex; align-items: center; justify-content: center; }
   .score-ring::after { content:''; position:absolute; width:38px; height:38px; border-radius:50%; background:white; }
-  .score-ring span { position:relative; z-index:1; font-size:.85rem; font-weight:700; color:#1e293b; }
+  .score-ring span { position:relative; z-index:1; font-size:.95rem; font-weight:700; color:#1e293b; }
   .property-card { border-left: 4px solid transparent; }
   .prop-blue { border-left-color: #3b82f6; }
   .prop-green { border-left-color: #22c55e; }
   .prop-purple { border-left-color: #a855f7; }
   .prop-orange { border-left-color: #f97316; }
-  .tag-pill { display:inline-flex; align-items:center; gap:.25rem; padding:.2rem .55rem; border-radius:9999px; font-size:.7rem; font-weight:600; }
-  .compare-table th { font-size:.875rem; font-weight:600; color:#374151; padding:.75rem 1rem; border-bottom:1px solid #e2e8f0; background:#f1f5f9; }
-  .compare-table td { font-size:.8rem; padding:.7rem .5rem; border-bottom:1px solid #f1f5f9; vertical-align:top; }
+  .tag-pill { display:inline-flex; align-items:center; gap:.25rem; padding:.2rem .55rem; border-radius:9999px; font-size:.8rem; font-weight:600; }
+  .compare-table th { font-size:1rem; font-weight:600; color:#374151; padding:.75rem 1rem; border-bottom:1px solid #e2e8f0; background:#f1f5f9; }
+  .compare-table td { font-size:.95rem; padding:.7rem .5rem; border-bottom:1px solid #f1f5f9; vertical-align:top; }
   .compare-table tr:hover td { background:#f1f5f9; }
-  .section-title { display:flex; align-items:center; gap:.5rem; font-weight:700; font-size:1.1rem; color:#0f172a; }
+  .section-title { display:flex; align-items:center; gap:.5rem; font-weight:700; font-size:1.25rem; color:#0f172a; }
   .check-circle { width:22px; height:22px; border-radius:50%; border:2px solid #cbd5e1; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; transition: all .2s; }
   .check-circle i { font-size:.65rem; color:white; opacity:0; transition: opacity .2s; }
   .gradient-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
   .stat-card { background:white; border-radius:1rem; padding:1.5rem; text-align:center; transition: all .2s; }
   .stat-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
-  .recommend-badge { display:inline-flex; align-items:center; gap:.25rem; font-size:.65rem; font-weight:700; padding:.15rem .5rem; border-radius:.375rem; }
+  .recommend-badge { display:inline-flex; align-items:center; gap:.25rem; font-size:.75rem; font-weight:700; padding:.15rem .5rem; border-radius:.375rem; }
   .rec-best { background:#dcfce7; color:#166534; }
   .rec-good { background:#dbeafe; color:#1e3a8a; }
   .rec-ok { background:#fef3c7; color:#92400e; }
@@ -132,10 +132,10 @@
 <div class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
   <div class="px-4">
     <div class="flex items-center gap-1">
-      <button id="btn-site" onclick="switchTab('site')" class="tab-btn active flex-1 py-3.5 text-sm font-semibold border-b-2 border-blue-600 text-blue-600 text-center transition-colors">
+      <button id="btn-site" onclick="switchTab('site')" class="tab-btn active flex-1 py-3.5 text-base font-semibold border-b-2 border-blue-600 text-blue-600 text-center transition-colors">
         <i class="fa fa-building mr-1.5"></i>MX · 上海总部选址对比
       </button>
-      <button id="btn-market" onclick="switchTab('market')" class="tab-btn flex-1 py-3.5 text-sm font-semibold border-b-2 border-transparent text-gray-500 text-center transition-colors hover:text-gray-700">
+      <button id="btn-market" onclick="switchTab('market')" class="tab-btn flex-1 py-3.5 text-base font-semibold border-b-2 border-transparent text-gray-500 text-center transition-colors hover:text-gray-700">
         <i class="fa fa-bar-chart mr-1.5"></i>上海市写字楼租赁市场数据分析
       </button>
     </div>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="text-right hidden sm:block">
                     <div class="text-2xl font-bold">¥201.43</div>
-                    <div class="text-sm text-blue-100">全市平均租金(元/㎡/月)</div>
+                    <div class="text-base text-blue-100">全市平均租金(元/㎡/月)</div>
                 </div>
             </div>
         </div>
@@ -166,8 +166,8 @@
             <div class="glass rounded-xl p-5 mkt-card-shadow">
                 <div class="flex items-center justify-between">
                     <div>
-                        <p class="text-gray-500 text-sm">全市平均租金</p>
-                        <p class="text-2xl font-bold text-gray-800">¥201.43<span class="text-sm font-normal text-gray-500">/㎡/月</span></p>
+                        <p class="text-gray-500 text-base">全市平均租金</p>
+                        <p class="text-2xl font-bold text-gray-800">¥201.43<span class="text-base font-normal text-gray-500">/㎡/月</span></p>
                     </div>
                     <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
                         <i class="fa fa-money text-blue-600 text-lg"></i>
@@ -177,8 +177,8 @@
             <div class="glass rounded-xl p-5 mkt-card-shadow">
                 <div class="flex items-center justify-between">
                     <div>
-                        <p class="text-gray-500 text-sm">全市空置率</p>
-                        <p class="text-2xl font-bold text-gray-800">23.4<span class="text-sm font-normal text-gray-500">%</span></p>
+                        <p class="text-gray-500 text-base">全市空置率</p>
+                        <p class="text-2xl font-bold text-gray-800">23.4<span class="text-base font-normal text-gray-500">%</span></p>
                     </div>
                     <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
                         <i class="fa fa-pie-chart text-orange-600 text-lg"></i>
@@ -188,8 +188,8 @@
             <div class="glass rounded-xl p-5 mkt-card-shadow">
                 <div class="flex items-center justify-between">
                     <div>
-                        <p class="text-gray-500 text-sm">核心CBD均价</p>
-                        <p class="text-2xl font-bold text-gray-800">¥238.78<span class="text-sm font-normal text-gray-500">/㎡/月</span></p>
+                        <p class="text-gray-500 text-base">核心CBD均价</p>
+                        <p class="text-2xl font-bold text-gray-800">¥238.78<span class="text-base font-normal text-gray-500">/㎡/月</span></p>
                     </div>
                     <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
                         <i class="fa fa-star text-purple-600 text-lg"></i>
@@ -199,8 +199,8 @@
             <div class="glass rounded-xl p-5 mkt-card-shadow">
                 <div class="flex items-center justify-between">
                     <div>
-                        <p class="text-gray-500 text-sm">新兴商务区均价</p>
-                        <p class="text-2xl font-bold text-gray-800">¥158.80<span class="text-sm font-normal text-gray-500">/㎡/月</span></p>
+                        <p class="text-gray-500 text-base">新兴商务区均价</p>
+                        <p class="text-2xl font-bold text-gray-800">¥158.80<span class="text-base font-normal text-gray-500">/㎡/月</span></p>
                     </div>
                     <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
                         <i class="fa fa-line-chart text-green-600 text-lg"></i>
@@ -236,16 +236,16 @@
         <!-- Emerging Business Districts -->
         <div class="glass rounded-xl p-6 mkt-card-shadow">
             <h3 class="text-lg font-bold text-gray-800 mb-4"><i class="fa fa-map-signs mr-2 text-green-600"></i>新兴商务区专题</h3>
-            <p class="text-sm text-gray-500 mb-4">新兴商务区是上海写字楼市场中与核心CBD相对的概念，主要特点是近年大量新增供应入市、空置率较高、议价空间大、租金比核心CBD低约33%。以下为各新兴商务区的详细定位：</p>
+            <p class="text-base text-gray-500 mb-4">新兴商务区是上海写字楼市场中与核心CBD相对的概念，主要特点是近年大量新增供应入市、空置率较高、议价空间大、租金比核心CBD低约33%。以下为各新兴商务区的详细定位：</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="emergingGrid"></div>
         </div>
 
         <!-- Property Fee Section -->
         <div class="glass rounded-xl p-6 mkt-card-shadow">
             <h3 class="text-lg font-bold text-gray-800 mb-4"><i class="fa fa-wrench mr-2 text-teal-600"></i>全上海物业费参考区间 (元/㎡/月)</h3>
-            <p class="text-sm text-gray-500 mb-4">注：物业费为楼宇级/项目级数据，五大行季度报告通常不统计。以下为行业通行参考区间，具体以项目租赁条款为准。</p>
+            <p class="text-base text-gray-500 mb-4">注：物业费为楼宇级/项目级数据，五大行季度报告通常不统计。以下为行业通行参考区间，具体以项目租赁条款为准。</p>
             <div class="overflow-x-auto">
-                <table class="w-full text-sm">
+                <table class="w-full text-base">
                     <thead>
                         <tr class="bg-gray-100 text-gray-700">
                             <th class="px-4 py-3 text-left rounded-tl-lg">区域/等级</th>
@@ -277,7 +277,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="mt-3 text-xs text-gray-400"><i class="fa fa-info-circle mr-1"></i>物业费相对刚性，业主可能提供"物业费补贴"或"租金含物业打包价"促销。</div>
+            <div class="mt-3 text-base text-gray-400"><i class="fa fa-info-circle mr-1"></i>物业费相对刚性，业主可能提供"物业费补贴"或"租金含物业打包价"促销。</div>
         </div>
 
         <!-- Calculation Logic -->
@@ -286,17 +286,17 @@
             <div class="space-y-4">
                 <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
                     <h4 class="font-semibold text-blue-800 mb-2">合计值计算逻辑</h4>
-                    <div class="text-sm text-blue-700 space-y-1 font-mono">
+                    <div class="text-base text-blue-700 space-y-1 font-mono">
                         <p><strong>CBD核心区合计租金</strong> = Σ(各子市场租金 × 存量) / Σ(各子市场存量)</p>
                         <p class="pl-4">= (287.87×217.96 + 273.06×146.76 + 247.48×63.57 + 226.80×218.22 + 226.52×111.91 + 169.50×145.59) / 904.02</p>
                         <p class="pl-4">= <strong>238.78</strong> 元/㎡/月</p>
                         <p><strong>全市合计租金</strong> = (CBD核心区合计 × CBD存量 + 新兴商务区合计 × 新兴存量) / 总存量</p>
                         <p class="pl-4">= (238.78×904.02 + 158.80×875.39) / 1787.31</p>
                         <p class="pl-4">= <strong>201.43</strong> 元/㎡/月</p>
-                        <p class="text-xs text-blue-500 mt-1">注：各区租金按对应市场存量加权平均，空置率为各子市场的算术平均。</p>
+                        <p class="text-base text-blue-500 mt-1">注：各区租金按对应市场存量加权平均，空置率为各子市场的算术平均。</p>
                     </div>
                 </div>
-                <div class="p-3 bg-gray-50 rounded-lg text-xs text-gray-500 mt-2">
+                <div class="p-3 bg-gray-50 rounded-lg text-base text-gray-500 mt-2">
                     <p class="font-semibold text-gray-600 mb-1"><i class="fa fa-book mr-1"></i>数据来源说明：</p>
                     <ul class="space-y-1 list-disc pl-4">
                         <li><strong>权威数据</strong>：陆家嘴、静安、徐汇、黄浦、竹园、长宁的租金/空置率/存量来自戴德梁行《上海写字楼市场报告 2025年Q4》<a href="https://assets.cushmanwakefield.com/-/media/cw/marketbeat-pdfs/2025/q4/apac-and-gc/shanghai-office-marketbeat-q4-2025-final.pdf" target="_blank" class="text-blue-500 hover:underline">[PDF原文]</a></li>
@@ -309,7 +309,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="px-4 py-6 text-center text-gray-400 text-sm">
+    <div class="px-4 py-6 text-center text-gray-400 text-base">
         <p>数据整理时间：2025年Q4 | 仅供参考，实际价格以具体项目和谈判为准</p>
     </div>
 
@@ -325,41 +325,41 @@
   <div class="flex items-center justify-between mb-4">
     <div>
       <h1 class="text-2xl font-bold">两大候选快速对比</h1>
-      <p class="text-indigo-100 text-xs mt-1">2026年4月23日实地考察 · 点击卡片查看详情</p>
+      <p class="text-indigo-100 text-base mt-1">2026年4月23日实地考察 · 点击卡片查看详情</p>
     </div>
     <div class="text-right">
-      <div class="text-xs text-indigo-200">推荐排序</div>
-      <div class="text-sm font-bold">星扬 → 万科</div>
+      <div class="text-base text-indigo-200">推荐排序</div>
+      <div class="text-base font-bold">星扬 → 万科</div>
     </div>
   </div>
   <div class="grid grid-cols-2 gap-4">
     <!-- 星扬西岸 -->
     <a href="#detail-xingyang" class="stat-card card-shadow-hover prop-blue">
       <div class="flex items-center justify-between mb-2">
-        <span class="text-xs font-bold text-gray-700">星扬西岸中心</span>
+        <span class="text-base font-bold text-gray-700">星扬西岸中心</span>
         <span class="recommend-badge rec-good">地标江景</span>
       </div>
       <div class="text-2xl font-bold text-indigo-600">8</div>
-      <div class="text-xs text-gray-400 mb-2">元/㎡/天（实际约5元）</div>
+      <div class="text-base text-gray-400 mb-2">元/㎡/天（实际约5元）</div>
       <div class="flex flex-wrap gap-1 justify-center">
         <span class="tag-pill bg-indigo-50 text-indigo-700">1900-3000㎡</span>
         <span class="tag-pill bg-gray-100 text-gray-600">得房率64%</span>
       </div>
-      <div class="mt-2 text-xs text-gray-500"><span class="metro-line line-11">11</span> 耀华路 地铁上盖</div>
+      <div class="mt-2 text-base text-gray-500"><span class="metro-line line-11">11</span> 耀华路 地铁上盖</div>
     </a>
     <!-- 龙华万科 -->
     <a href="#detail-wanke" class="stat-card card-shadow-hover prop-green">
       <div class="flex items-center justify-between mb-2">
-        <span class="text-xs font-bold text-gray-700">龙华万科中心</span>
+        <span class="text-base font-bold text-gray-700">龙华万科中心</span>
         <span class="recommend-badge rec-good">实地考察</span>
       </div>
       <div class="text-2xl font-bold text-green-600">5.17</div>
-      <div class="text-xs text-gray-400 mb-2">元/㎡/天</div>
+      <div class="text-base text-gray-400 mb-2">元/㎡/天</div>
       <div class="flex flex-wrap gap-1 justify-center">
         <span class="tag-pill bg-green-50 text-green-700">2300㎡整层</span>
         <span class="tag-pill bg-gray-100 text-gray-600">得房率80%</span>
       </div>
-      <div class="mt-2 text-xs text-gray-500"><span class="metro-line line-11">11</span><span class="metro-line line-12">12</span> 龙华 双地铁上盖</div>
+      <div class="mt-2 text-base text-gray-500"><span class="metro-line line-11">11</span><span class="metro-line line-12">12</span> 龙华 双地铁上盖</div>
     </a>
 
 
@@ -481,7 +481,7 @@
 <div class="bg-white rounded-2xl card-shadow p-6">
   <div class="flex items-center justify-between mb-3">
     <div class="section-title mb-0"><i class="fa fa-map text-indigo-600"></i> 两物业位置总览</div>
-    <div class="flex gap-2 text-xs">
+    <div class="flex gap-2 text-base">
       <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block"></span> 物业</span>
       <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-indigo-700 inline-block"></span> 地铁站</span>
     </div>
@@ -497,13 +497,13 @@
         <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg"><i class="fa fa-building"></i></div>
         <div>
           <h2 class="text-lg font-bold text-gray-900">星扬西岸中心</h2>
-          <p class="text-xs text-gray-500">徐汇滨江沿江核心区 · 超高层甲级写字楼（西岸最高之一）· 现房</p>
+          <p class="text-base text-gray-500">徐汇滨江沿江核心区 · 超高层甲级写字楼（西岸最高之一）· 现房</p>
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-bold text-indigo-600">8</div>
-        <div class="text-xs text-gray-400">元/㎡/天（含税）</div>
-        <div class="text-xs text-green-600 font-semibold">实际约5元</div>
+        <div class="text-base text-gray-400">元/㎡/天（含税）</div>
+        <div class="text-base text-green-600 font-semibold">实际约5元</div>
       </div>
     </div>
     <div class="flex flex-wrap gap-1.5 mb-4">
@@ -513,20 +513,20 @@
       <span class="tag-pill bg-green-50 text-green-700"><i class="fa fa-check"></i> 现房可随时入驻</span>
     </div>
     <div class="grid grid-cols-5 gap-2 mb-4 text-center">
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">1900-3000㎡</div><div class="text-xs text-gray-400">看场面积</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">64%</div><div class="text-xs text-gray-400">得房率</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">40元</div><div class="text-xs text-gray-400">物业费/月/㎡</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">整层4卫</div><div class="text-xs text-gray-400">男/女/残/VIP淋浴</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">充足</div><div class="text-xs text-gray-400">停车位</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">1900-3000㎡</div><div class="text-base text-gray-400">看场面积</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">64%</div><div class="text-base text-gray-400">得房率</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">40元</div><div class="text-base text-gray-400">物业费/月/㎡</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">整层4卫</div><div class="text-base text-gray-400">男/女/残/VIP淋浴</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">充足</div><div class="text-base text-gray-400">停车位</div></div>
     </div>
     <div class="space-y-2 mb-4">
-      <div class="flex gap-2 text-sm bg-green-50 rounded-lg p-2.5"><span class="text-green-600 font-bold shrink-0">优</span><span class="text-gray-700">11号线耀华路地铁上盖；除西北角外所有区域看江景，无遮挡，视野最优；地下一楼全为餐饮，1站地铁到前滩太古里；50楼以上6部电梯；可根据需求改造，大门可调至电梯厅位置</span></div>
-      <div class="flex gap-2 text-sm bg-red-50 rounded-lg p-2.5"><span class="text-red-600 font-bold shrink-0">劣</span><span class="text-gray-700">得房率仅约64%（超高层通病）；空调8:00-20:00开放，加班需700元/小时；表面租金8元/天/㎡为两家最高；单地铁覆盖，不如双地铁便利</span></div>
+      <div class="flex gap-2 text-base bg-green-50 rounded-lg p-2.5"><span class="text-green-600 font-bold shrink-0">优</span><span class="text-gray-700">11号线耀华路地铁上盖；除西北角外所有区域看江景，无遮挡，视野最优；地下一楼全为餐饮，1站地铁到前滩太古里；50楼以上6部电梯；可根据需求改造，大门可调至电梯厅位置</span></div>
+      <div class="flex gap-2 text-base bg-red-50 rounded-lg p-2.5"><span class="text-red-600 font-bold shrink-0">劣</span><span class="text-gray-700">得房率仅约64%（超高层通病）；空调8:00-20:00开放，加班需700元/小时；表面租金8元/天/㎡为两家最高；单地铁覆盖，不如双地铁便利</span></div>
     </div>
     <div class="bg-white border border-slate-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-gray-800 text-sm mb-1 flex items-center gap-2"><i class="fa fa-shield text-indigo-500"></i> 物业服务 · 仲量联行 JLL</div>
-      <p class="text-xs text-gray-600 leading-relaxed mb-2">仲量联行（Jones Lang LaSalle）是全球领先的房地产服务和投资管理公司，成立于1783年，业务覆盖80多个国家。在上海，JLL管理众多超甲级地标项目（如上海中心、环球金融中心等）。星扬西岸由JLL提供全周期物管服务，包括24小时礼宾、智能安防、VAV空调系统维护、PM2.5过滤等，其超高层项目管理经验丰富。</p>
-      <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+      <div class="font-bold text-gray-800 text-base mb-1 flex items-center gap-2"><i class="fa fa-shield text-indigo-500"></i> 物业服务 · 仲量联行 JLL</div>
+      <p class="text-base text-gray-600 leading-relaxed mb-2">仲量联行（Jones Lang LaSalle）是全球领先的房地产服务和投资管理公司，成立于1783年，业务覆盖80多个国家。在上海，JLL管理众多超甲级地标项目（如上海中心、环球金融中心等）。星扬西岸由JLL提供全周期物管服务，包括24小时礼宾、智能安防、VAV空调系统维护、PM2.5过滤等，其超高层项目管理经验丰富。</p>
+      <div class="grid grid-cols-2 gap-2 text-base text-gray-600">
         <div class="bg-slate-50 rounded-lg p-2"><i class="fa fa-bath text-indigo-400 mr-1"></i>整层4卫：男/女/残/VIP淋浴</div>
         <div class="bg-slate-50 rounded-lg p-2"><i class="fa fa-coffee text-indigo-400 mr-1"></i>茶水间可自设</div>
         <div class="bg-slate-50 rounded-lg p-2"><i class="fa fa-snowflake-o text-indigo-400 mr-1"></i>空调8:00-20:00（周六半天）</div>
@@ -534,8 +534,8 @@
       </div>
     </div>
     <div class="bg-amber-50 border border-amber-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-amber-800 text-sm mb-1"><i class="fa fa-leaf"></i> 周边特色与商业配套</div>
-      <ul class="text-xs text-amber-900 space-y-1 list-disc list-inside">
+      <div class="font-bold text-amber-800 text-base mb-1"><i class="fa fa-leaf"></i> 周边特色与商业配套</div>
+      <ul class="text-base text-amber-900 space-y-1 list-disc list-inside">
         <li>地处<strong>西岸智慧谷</strong>辐射核心区，紧邻西岸传媒港、腾讯华东总部</li>
         <li><strong>地下一楼全为餐饮</strong>，日常用餐便利</li>
         <li>1站地铁直达<strong>前滩太古里</strong>，高端商业配套完善</li>
@@ -543,8 +543,8 @@
       </ul>
     </div>
     <div class="bg-sky-50 border border-sky-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-sky-800 text-sm mb-1"><i class="fa fa-robot"></i> AI产业政策</div>
-      <ul class="text-xs text-sky-900 space-y-1 list-disc list-inside">
+      <div class="font-bold text-sky-800 text-base mb-1"><i class="fa fa-robot"></i> AI产业政策</div>
+      <ul class="text-base text-sky-900 space-y-1 list-disc list-inside">
         <li>地处<strong>西岸智慧谷</strong>辐射核心区，可申报徐汇区AI产业扶持</li>
         <li>新注册/迁入：实缴资本最高<strong>5%</strong>开办奖励，上限<strong>2000万元</strong></li>
         <li>研发投入补贴：<strong>30%</strong>，年度最高<strong>5000万元</strong></li>
@@ -657,36 +657,36 @@
     <div class="mb-4">
       <div class="section-title text-base mb-2"><i class="fa fa-exchange text-indigo-500"></i> 通勤路线</div>
       <div class="bg-slate-50 rounded-xl p-3 space-y-3">
-        <div class="flex items-center gap-2 text-sm pb-2 border-b border-gray-200">
+        <div class="flex items-center gap-2 text-base pb-2 border-b border-gray-200">
           <span class="metro-line line-11">11</span><span class="font-medium">耀华路站</span>
-          <span class="ml-auto text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full font-semibold">地铁上盖</span>
+          <span class="ml-auto text-base bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full font-semibold">地铁上盖</span>
         </div>
-        <div class="text-xs font-semibold text-gray-700">交通枢纽距离</div>
+        <div class="text-base font-semibold text-gray-700">交通枢纽距离</div>
         <div class="grid grid-cols-3 gap-2">
           <div class="bg-white rounded-lg p-2 text-center border border-gray-100">
-            <div class="text-xs text-gray-400 mb-0.5"><i class="fa fa-plane text-indigo-400"></i> 浦东机场</div>
-            <div class="text-sm font-bold text-gray-800">45km</div>
-            <div class="text-xs text-gray-500">驾车约50′</div>
-            <div class="text-xs text-indigo-600 font-medium">地铁~70′</div>
+            <div class="text-base text-gray-400 mb-0.5"><i class="fa fa-plane text-indigo-400"></i> 浦东机场</div>
+            <div class="text-base font-bold text-gray-800">45km</div>
+            <div class="text-base text-gray-500">驾车约50′</div>
+            <div class="text-base text-indigo-600 font-medium">地铁~70′</div>
           </div>
           <div class="bg-white rounded-lg p-2 text-center border border-gray-100">
-            <div class="text-xs text-gray-400 mb-0.5"><i class="fa fa-plane text-green-400"></i> 虹桥机场/高铁</div>
-            <div class="text-sm font-bold text-gray-800">18km</div>
-            <div class="text-xs text-gray-500">驾车约25′</div>
-            <div class="text-xs text-indigo-600 font-medium">地铁~45′</div>
+            <div class="text-base text-gray-400 mb-0.5"><i class="fa fa-plane text-green-400"></i> 虹桥机场/高铁</div>
+            <div class="text-base font-bold text-gray-800">18km</div>
+            <div class="text-base text-gray-500">驾车约25′</div>
+            <div class="text-base text-indigo-600 font-medium">地铁~45′</div>
           </div>
           <div class="bg-white rounded-lg p-2 text-center border border-gray-100">
-            <div class="text-xs text-gray-400 mb-0.5"><i class="fa fa-train text-orange-400"></i> 上海南站</div>
-            <div class="text-sm font-bold text-gray-800">6km</div>
-            <div class="text-xs text-gray-500">驾车约12′</div>
-            <div class="text-xs text-indigo-600 font-medium">地铁~20′</div>
+            <div class="text-base text-gray-400 mb-0.5"><i class="fa fa-train text-orange-400"></i> 上海南站</div>
+            <div class="text-base font-bold text-gray-800">6km</div>
+            <div class="text-base text-gray-500">驾车约12′</div>
+            <div class="text-base text-indigo-600 font-medium">地铁~20′</div>
           </div>
         </div>
         <div class="border-t border-gray-200 pt-2">
-          <div class="text-xs font-semibold text-gray-700 mb-1.5">地铁路线详情</div>
-          <div class="route-step active text-sm text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">浦东机场</span>：磁悬浮/2号线 → 龙阳路 → <span class="metro-line line-11">11</span> → 耀华路，约70分钟</div>
-          <div class="route-step active text-sm text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">虹桥机场/高铁站</span>：10号线 → 交通大学 → <span class="metro-line line-11">11</span> → 耀华路，约45分钟</div>
-          <div class="route-step text-sm text-gray-700"><div class="route-dot"></div><span class="font-medium">上海南站</span>：<span class="metro-line line-11">11</span> 龙华站 → 耀华路（1站），约20分钟</div>
+          <div class="text-base font-semibold text-gray-700 mb-1.5">地铁路线详情</div>
+          <div class="route-step active text-base text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">浦东机场</span>：磁悬浮/2号线 → 龙阳路 → <span class="metro-line line-11">11</span> → 耀华路，约70分钟</div>
+          <div class="route-step active text-base text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">虹桥机场/高铁站</span>：10号线 → 交通大学 → <span class="metro-line line-11">11</span> → 耀华路，约45分钟</div>
+          <div class="route-step text-base text-gray-700"><div class="route-dot"></div><span class="font-medium">上海南站</span>：<span class="metro-line line-11">11</span> 龙华站 → 耀华路（1站），约20分钟</div>
         </div>
       </div>
     </div>
@@ -702,13 +702,13 @@
         <div class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center text-lg"><i class="fa fa-home"></i></div>
         <div>
           <h2 class="text-lg font-bold text-gray-900">龙华万科中心</h2>
-          <p class="text-xs text-gray-500">徐汇西岸北头，距黄浦江约1km，龙华寺旁 · 低密花园办公 · 双地铁上盖 · 2026年5月交付</p>
+          <p class="text-base text-gray-500">徐汇西岸北头，距黄浦江约1km，龙华寺旁 · 低密花园办公 · 双地铁上盖 · 2026年5月交付</p>
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-bold text-green-600">5.17</div>
-        <div class="text-xs text-gray-400">元/㎡/天</div>
-        <div class="text-xs text-gray-500">155元/月/㎡</div>
+        <div class="text-base text-gray-400">元/㎡/天</div>
+        <div class="text-base text-gray-500">155元/月/㎡</div>
       </div>
     </div>
     <div class="flex flex-wrap gap-1.5 mb-4">
@@ -718,20 +718,20 @@
       <span class="tag-pill bg-green-50 text-green-700"><i class="fa fa-building"></i> 预租阶段</span>
     </div>
     <div class="grid grid-cols-5 gap-2 mb-4 text-center">
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">2300㎡</div><div class="text-xs text-gray-400">整层面积</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">80%</div><div class="text-xs text-gray-400">得房率</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">32元</div><div class="text-xs text-gray-400">物业费/月/㎡</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">4.2m</div><div class="text-xs text-gray-400">总层高</div></div>
-      <div class="bg-slate-50 rounded-lg p-2"><div class="text-sm font-bold text-gray-800">1230个</div><div class="text-xs text-gray-400">停车位</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">2300㎡</div><div class="text-base text-gray-400">整层面积</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">80%</div><div class="text-base text-gray-400">得房率</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">32元</div><div class="text-base text-gray-400">物业费/月/㎡</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">4.2m</div><div class="text-base text-gray-400">总层高</div></div>
+      <div class="bg-slate-50 rounded-lg p-2"><div class="text-base font-bold text-gray-800">1230个</div><div class="text-base text-gray-400">停车位</div></div>
     </div>
     <div class="space-y-2 mb-4">
-      <div class="flex gap-2 text-sm bg-green-50 rounded-lg p-2.5"><span class="text-green-600 font-bold shrink-0">优</span><span class="text-gray-700">11/12号线双地铁上盖（地下直达）；整层得房率80%（走道纳入使用空间）；物业费32元/月/㎡，比西岸低8元；部分楼层带约100㎡露台；中央空调整层可加装独立空调；可自行敲掉隔断调整空间布局</span></div>
-      <div class="flex gap-2 text-sm bg-red-50 rounded-lg p-2.5"><span class="text-red-600 font-bold shrink-0">劣</span><span class="text-gray-700">2026年5月交付，目前预租阶段，部分企业已提前入住（新房带味）；低密写字楼非地标，看不到江景；底层景观一般，楼宇相隔接近；科技互联网产业氛围相对较弱</span></div>
+      <div class="flex gap-2 text-base bg-green-50 rounded-lg p-2.5"><span class="text-green-600 font-bold shrink-0">优</span><span class="text-gray-700">11/12号线双地铁上盖（地下直达）；整层得房率80%（走道纳入使用空间）；物业费32元/月/㎡，比西岸低8元；部分楼层带约100㎡露台；中央空调整层可加装独立空调；可自行敲掉隔断调整空间布局</span></div>
+      <div class="flex gap-2 text-base bg-red-50 rounded-lg p-2.5"><span class="text-red-600 font-bold shrink-0">劣</span><span class="text-gray-700">2026年5月交付，目前预租阶段，部分企业已提前入住（新房带味）；低密写字楼非地标，看不到江景；底层景观一般，楼宇相隔接近；科技互联网产业氛围相对较弱</span></div>
     </div>
     <div class="bg-white border border-slate-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-gray-800 text-sm mb-1 flex items-center gap-2"><i class="fa fa-shield text-green-500"></i> 物业服务 · 万物梁行</div>
-      <p class="text-xs text-gray-600 leading-relaxed mb-2">万物梁行（Onewo CMS）是万科集团与国际知名物业机构合资成立的商业物业服务品牌，专注于甲级写字楼与产业园区的综合运营。公司整合万科的本土化运营经验与国际标准，提供资产运营、设施管理、企业行政服务及智慧办公解决方案。在龙华万科中心，万物梁行负责地下直达双地铁的便捷动线管理、8.8万㎡龙华会商业一体化运营，以及针对科技企业的定制化服务，保障办公与商业高效协同。</p>
-      <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+      <div class="font-bold text-gray-800 text-base mb-1 flex items-center gap-2"><i class="fa fa-shield text-green-500"></i> 物业服务 · 万物梁行</div>
+      <p class="text-base text-gray-600 leading-relaxed mb-2">万物梁行（Onewo CMS）是万科集团与国际知名物业机构合资成立的商业物业服务品牌，专注于甲级写字楼与产业园区的综合运营。公司整合万科的本土化运营经验与国际标准，提供资产运营、设施管理、企业行政服务及智慧办公解决方案。在龙华万科中心，万物梁行负责地下直达双地铁的便捷动线管理、8.8万㎡龙华会商业一体化运营，以及针对科技企业的定制化服务，保障办公与商业高效协同。</p>
+      <div class="grid grid-cols-2 gap-2 text-base text-gray-600">
         <div class="bg-slate-50 rounded-lg p-2"><i class="fa fa-bath text-green-400 mr-1"></i>2个公共洗手间（女卫设私密储物柜）</div>
         <div class="bg-slate-50 rounded-lg p-2"><i class="fa fa-coffee text-green-400 mr-1"></i>公共茶水间（冷直饮+100度热水）</div>
         <div class="bg-slate-50 rounded-lg p-2"><i class="fa fa-snowflake-o text-green-400 mr-1"></i>中央空调整层可加装独立空调</div>
@@ -739,8 +739,8 @@
       </div>
     </div>
     <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-emerald-800 text-sm mb-1"><i class="fa fa-robot"></i> AI产业政策</div>
-      <ul class="text-xs text-emerald-900 space-y-1 list-disc list-inside">
+      <div class="font-bold text-emerald-800 text-base mb-1"><i class="fa fa-robot"></i> AI产业政策</div>
+      <ul class="text-base text-emerald-900 space-y-1 list-disc list-inside">
         <li>注册在<strong>徐汇区</strong>，可享受区级AI产业政策全覆盖</li>
         <li>新注册/迁入：实缴资本最高<strong>5%</strong>开办奖励，上限<strong>2000万元</strong></li>
         <li>成长奖励：年度主营收入突破2亿/10亿/30亿，分别奖励<strong>100万/300万/500万元</strong></li>
@@ -748,8 +748,8 @@
       </ul>
     </div>
     <div class="bg-white border border-slate-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-gray-800 text-sm mb-2 flex items-center gap-2"><i class="fa fa-users text-green-500"></i> 已入驻企业</div>
-      <div class="grid grid-cols-3 gap-2 text-xs">
+      <div class="font-bold text-gray-800 text-base mb-2 flex items-center gap-2"><i class="fa fa-users text-green-500"></i> 已入驻企业</div>
+      <div class="grid grid-cols-3 gap-2 text-base">
         <div class="bg-slate-50 rounded-lg p-2 text-center">
           <div class="font-semibold text-gray-800">白象食品集团</div>
           <div class="text-gray-400">总部型</div>
@@ -765,8 +765,8 @@
       </div>
     </div>
     <div class="bg-amber-50 border border-amber-100 rounded-xl p-3 mb-4">
-      <div class="font-bold text-amber-800 text-sm mb-1"><i class="fa fa-leaf"></i> 周边特色与商业配套</div>
-      <ul class="text-xs text-amber-900 space-y-1 list-disc list-inside">
+      <div class="font-bold text-amber-800 text-base mb-1"><i class="fa fa-leaf"></i> 周边特色与商业配套</div>
+      <ul class="text-base text-amber-900 space-y-1 list-disc list-inside">
         <li>紧邻<strong>龙华寺</strong>（上海历史最久、规模最大的寺庙，弥勒佛道场，始建于三国时期，至今2242年），部分楼层可眺望龙华寺</li>
         <li>写字楼通过<strong>转换梯连通南区龙华会商业</strong>，日常餐饮、消费便利性高</li>
         <li>龙华会商业为8.8万㎡综合体，涵盖餐饮、零售、休闲等多元业态</li>
@@ -932,36 +932,36 @@
     <div class="mb-4">
       <div class="section-title text-base mb-2"><i class="fa fa-exchange text-indigo-500"></i> 通勤路线</div>
       <div class="bg-slate-50 rounded-xl p-3 space-y-3">
-        <div class="flex items-center gap-2 text-sm pb-2 border-b border-gray-200">
+        <div class="flex items-center gap-2 text-base pb-2 border-b border-gray-200">
           <span class="metro-line line-11">11</span><span class="metro-line line-12">12</span><span class="font-medium">龙华站</span>
-          <span class="ml-auto text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">地下直达 · 0-80m</span>
+          <span class="ml-auto text-base bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">地下直达 · 0-80m</span>
         </div>
-        <div class="text-xs font-semibold text-gray-700">交通枢纽距离</div>
+        <div class="text-base font-semibold text-gray-700">交通枢纽距离</div>
         <div class="grid grid-cols-3 gap-2">
           <div class="bg-white rounded-lg p-2 text-center border border-gray-100">
-            <div class="text-xs text-gray-400 mb-0.5"><i class="fa fa-plane text-indigo-400"></i> 浦东机场</div>
-            <div class="text-sm font-bold text-gray-800">48km</div>
-            <div class="text-xs text-gray-500">驾车约55′</div>
-            <div class="text-xs text-indigo-600 font-medium">地铁~75′</div>
+            <div class="text-base text-gray-400 mb-0.5"><i class="fa fa-plane text-indigo-400"></i> 浦东机场</div>
+            <div class="text-base font-bold text-gray-800">48km</div>
+            <div class="text-base text-gray-500">驾车约55′</div>
+            <div class="text-base text-indigo-600 font-medium">地铁~75′</div>
           </div>
           <div class="bg-white rounded-lg p-2 text-center border border-gray-100">
-            <div class="text-xs text-gray-400 mb-0.5"><i class="fa fa-plane text-green-400"></i> 虹桥机场/高铁</div>
-            <div class="text-sm font-bold text-gray-800">16km</div>
-            <div class="text-xs text-gray-500">驾车约22′</div>
-            <div class="text-xs text-indigo-600 font-medium">地铁~50′</div>
+            <div class="text-base text-gray-400 mb-0.5"><i class="fa fa-plane text-green-400"></i> 虹桥机场/高铁</div>
+            <div class="text-base font-bold text-gray-800">16km</div>
+            <div class="text-base text-gray-500">驾车约22′</div>
+            <div class="text-base text-indigo-600 font-medium">地铁~50′</div>
           </div>
           <div class="bg-white rounded-lg p-2 text-center border border-gray-100">
-            <div class="text-xs text-gray-400 mb-0.5"><i class="fa fa-train text-orange-400"></i> 上海南站</div>
-            <div class="text-sm font-bold text-gray-800">5km</div>
-            <div class="text-xs text-gray-500">驾车约10′</div>
-            <div class="text-xs text-indigo-600 font-medium">地铁~15′</div>
+            <div class="text-base text-gray-400 mb-0.5"><i class="fa fa-train text-orange-400"></i> 上海南站</div>
+            <div class="text-base font-bold text-gray-800">5km</div>
+            <div class="text-base text-gray-500">驾车约10′</div>
+            <div class="text-base text-indigo-600 font-medium">地铁~15′</div>
           </div>
         </div>
         <div class="border-t border-gray-200 pt-2">
-          <div class="text-xs font-semibold text-gray-700 mb-1.5">地铁路线详情</div>
-          <div class="route-step active text-sm text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">浦东机场</span>：2号线 → 江苏路 → <span class="metro-line line-11">11</span> → 龙华，约75分钟</div>
-          <div class="route-step active text-sm text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">虹桥机场/高铁站</span>：10号线 → 交通大学 → <span class="metro-line line-11">11</span> → 龙华，约50分钟</div>
-          <div class="route-step text-sm text-gray-700"><div class="route-dot"></div><span class="font-medium">上海南站</span>：<span class="metro-line line-11">11</span> 龙耀路/云锦路 → 龙华（1-2站），约15分钟</div>
+          <div class="text-base font-semibold text-gray-700 mb-1.5">地铁路线详情</div>
+          <div class="route-step active text-base text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">浦东机场</span>：2号线 → 江苏路 → <span class="metro-line line-11">11</span> → 龙华，约75分钟</div>
+          <div class="route-step active text-base text-gray-700 pb-2"><div class="route-dot"></div><span class="font-medium">虹桥机场/高铁站</span>：10号线 → 交通大学 → <span class="metro-line line-11">11</span> → 龙华，约50分钟</div>
+          <div class="route-step text-base text-gray-700"><div class="route-dot"></div><span class="font-medium">上海南站</span>：<span class="metro-line line-11">11</span> 龙耀路/云锦路 → 龙华（1-2站），约15分钟</div>
         </div>
       </div>
     </div>
@@ -974,16 +974,16 @@
   <div class="section-title mb-4"><i class="fa fa-eye text-indigo-600"></i> 看场实况（2026年4月23日）</div>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="border border-slate-100 rounded-xl p-4">
-      <div class="font-bold text-sm text-indigo-800 mb-3 flex items-center gap-2"><i class="fa fa-building text-indigo-500"></i> 星扬西岸中心</div>
-      <div class="space-y-2 text-sm text-gray-700">
+      <div class="font-bold text-base text-indigo-800 mb-3 flex items-center gap-2"><i class="fa fa-building text-indigo-500"></i> 星扬西岸中心</div>
+      <div class="space-y-2 text-base text-gray-700">
         <div class="flex items-start gap-2"><span class="text-indigo-500 font-bold shrink-0">•</span><span>今日看场楼层：<strong>58层半层（约1900㎡）+ 57层整层（约3000㎡）</strong></span></div>
         <div class="flex items-start gap-2"><span class="text-indigo-500 font-bold shrink-0">•</span><span>景观确认：<strong class="text-indigo-700">除西北角外所有区域看江景，无遮挡，视野最优</strong>。可看世博会中国馆与上海三件套</span></div>
         <div class="flex items-start gap-2"><span class="text-indigo-500 font-bold shrink-0">•</span><span>交付状态：<strong class="text-green-700">现房，可随时入驻</strong></span></div>
       </div>
     </div>
     <div class="border border-slate-100 rounded-xl p-4">
-      <div class="font-bold text-sm text-green-800 mb-3 flex items-center gap-2"><i class="fa fa-home text-green-500"></i> 龙华万科中心</div>
-      <div class="space-y-2 text-sm text-gray-700">
+      <div class="font-bold text-base text-green-800 mb-3 flex items-center gap-2"><i class="fa fa-home text-green-500"></i> 龙华万科中心</div>
+      <div class="space-y-2 text-base text-gray-700">
         <div class="flex items-start gap-2"><span class="text-green-500 font-bold shrink-0">•</span><span>今日看场楼层：<strong>名义10层约2300㎡ + 9层2300㎡带露台</strong></span></div>
         <div class="flex items-start gap-2"><span class="text-green-500 font-bold shrink-0">•</span><span>景观确认：<strong>无江景，部分角度看到龙华寺</strong></span></div>
         <div class="flex items-start gap-2"><span class="text-green-500 font-bold shrink-0">•</span><span>交付状态：<strong>2026年5月交付，目前预租阶段，部分企业已提前入住（新房带味）</strong></span></div>
@@ -1015,8 +1015,8 @@
     </table>
   </div>
   <div class="bg-amber-50 border border-amber-100 rounded-xl p-4">
-    <div class="font-bold text-amber-800 text-sm mb-2"><i class="fa fa-lightbulb-o"></i> 关键结论</div>
-    <ul class="text-sm text-amber-900 space-y-1 list-disc list-inside">
+    <div class="font-bold text-amber-800 text-base mb-2"><i class="fa fa-lightbulb-o"></i> 关键结论</div>
+    <ul class="text-base text-amber-900 space-y-1 list-disc list-inside">
       <li><strong>龙华万科</strong>在得房率（80% vs 64%）和物业费（32 vs 40元/月/㎡）上具有明显优势，同标称面积下实际可用空间多约25%</li>
       <li><strong>星扬西岸</strong>虽然表面租金略高，但8-9个月免租期摊薄后实际成本约5元/天/㎡，与龙华接近</li>
       <li>若按实际可使用面积折算，龙华万科的单位有效面积成本可能更低，性价比略胜一筹</li>
@@ -1045,7 +1045,7 @@
       </tbody>
     </table>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-base">
     <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-3">
       <div class="font-bold text-indigo-800 mb-1">星扬西岸</div>
       <p class="text-indigo-900">适合注重<strong>商务形象和产业协同</strong>的企业。周边AI/互联网巨头云集，本栋租户国际化程度高，产业生态完善。地下餐饮+前滩太古里商业配套高端。</p>
@@ -1079,7 +1079,7 @@
       </tbody>
     </table>
   </div>
-  <div class="mt-4 bg-slate-50 rounded-xl p-4 text-sm text-gray-700 space-y-1">
+  <div class="mt-4 bg-slate-50 rounded-xl p-4 text-base text-gray-700 space-y-1">
     <p><strong class="text-indigo-700">星扬西岸</strong>在景观视野、产业氛围、户型方正度三个维度满分，适合注重商务形象和产业协同的企业。</p>
     <p><strong class="text-green-700">龙华万科</strong>在空间得房率上满分，交通便利性和租金性价比与西岸持平，适合注重实用性和成本控制的企业。</p>
     <p class="text-red-600">底层景观、楼宇相隔接近和产业氛围是龙华万科的明显短板，若公司对这两项有较高要求，应优先考虑星扬西岸。</p>
@@ -1091,10 +1091,10 @@
   <div class="section-title mb-4"><i class="fa fa-ban text-gray-500"></i> 已排除项目（嘉哥未看）</div>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="border border-red-100 bg-red-50 rounded-xl p-4">
-      <div class="font-bold text-red-800 text-sm mb-2 flex items-center gap-2"><i class="fa fa-times-circle text-red-500"></i> 西岸西塔</div>
-      <div class="text-sm text-red-900 space-y-1 mb-3">
+      <div class="font-bold text-red-800 text-base mb-2 flex items-center gap-2"><i class="fa fa-times-circle text-red-500"></i> 西岸西塔</div>
+      <div class="text-base text-red-900 space-y-1 mb-3">
         <p><strong>核心问题：</strong>得房率不足50%；楼体斜向设计，户型不方正；景观有遮挡</p>
-        <p class="text-xs text-red-700">备注：美高梅酒店顶部，商汤购买4-26层自持，风水测算较好，但空间效率过低</p>
+        <p class="text-base text-red-700">备注：美高梅酒店顶部，商汤购买4-26层自持，风水测算较好，但空间效率过低</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
         <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)"><img src="images/xitax_01.jpg" class="w-full h-28 object-cover transition-transform duration-300 group-hover:scale-105" alt="西岸西塔"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center"><i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-lg transition-opacity"></i></div></div>
@@ -1106,10 +1106,10 @@
       </div>
     </div>
     <div class="border border-red-100 bg-red-50 rounded-xl p-4">
-      <div class="font-bold text-red-800 text-sm mb-2 flex items-center gap-2"><i class="fa fa-times-circle text-red-500"></i> 阿里出租项目</div>
-      <div class="text-sm text-red-900 space-y-1 mb-3">
+      <div class="font-bold text-red-800 text-base mb-2 flex items-center gap-2"><i class="fa fa-times-circle text-red-500"></i> 阿里出租项目</div>
+      <div class="text-base text-red-900 space-y-1 mb-3">
         <p><strong>核心问题：</strong>仅二层/八层可租（二层视野最差）；空间压抑；楼体高度低于周边，被遮挡</p>
-        <p class="text-xs text-red-700">备注：唯一优势可使用阿里食堂，可租面积大但楼层受限严重</p>
+        <p class="text-base text-red-700">备注：唯一优势可使用阿里食堂，可租面积大但楼层受限严重</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
         <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)"><img src="images/ali_01.jpg" class="w-full h-28 object-cover transition-transform duration-300 group-hover:scale-105" alt="阿里出租项目"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center"><i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-lg transition-opacity"></i></div></div>
@@ -1125,27 +1125,27 @@
 <!-- AI产业政策汇总 -->
 <div id="policy" class="bg-white rounded-2xl card-shadow p-6">
   <div class="section-title mb-4"><i class="fa fa-robot text-purple-600"></i> 徐汇区AI产业政策汇总（2025-2026）</div>
-  <p class="text-xs text-gray-500 mb-4">两处候选物业均位于徐汇区，可享受以下政策。</p>
+  <p class="text-base text-gray-500 mb-4">两处候选物业均位于徐汇区，可享受以下政策。</p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
     <div class="border border-slate-100 rounded-xl p-4">
-      <div class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-briefcase text-indigo-500"></i> 企业落户与开办</div>
-      <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
+      <div class="font-bold text-base text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-briefcase text-indigo-500"></i> 企业落户与开办</div>
+      <ul class="text-base text-gray-600 space-y-1.5 list-disc list-inside">
         <li>新注册/迁入AI企业，实缴资本达2000万以上，最高按<strong>5%</strong>开办奖励，上限<strong>2000万元</strong></li>
         <li>年度主营收入首次突破2亿/10亿/30亿，分别奖励<strong>100万/300万/500万元</strong></li>
         <li>总部型企业最高奖励<strong>2000万元</strong></li>
       </ul>
     </div>
     <div class="border border-slate-100 rounded-xl p-4">
-      <div class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-flask text-purple-500"></i> 研发投入与算力</div>
-      <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
+      <div class="font-bold text-base text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-flask text-purple-500"></i> 研发投入与算力</div>
+      <ul class="text-base text-gray-600 space-y-1.5 list-disc list-inside">
         <li>研发投入占营收5%以上，按<strong>30%</strong>支持，年度最高<strong>5000万元</strong></li>
         <li>购买/租用算力，最高按实际投入<strong>30%</strong>奖励，年度最高<strong>2000万元</strong></li>
         <li>模速空间入驻企业可"免申即享"<strong>100万元等价算力大礼包</strong></li>
       </ul>
     </div>
     <div class="border border-slate-100 rounded-xl p-4">
-      <div class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-brain text-pink-500"></i> 大模型专项（徐汇区通用）</div>
-      <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
+      <div class="font-bold text-base text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-brain text-pink-500"></i> 大模型专项（徐汇区通用）</div>
+      <ul class="text-base text-gray-600 space-y-1.5 list-disc list-inside">
         <li>高质量数据集：最高奖励<strong>300万元</strong></li>
         <li>AI大模型产品销售：按合同额<strong>15%</strong>，最高<strong>1000万元</strong></li>
         <li>采购无关联AI产品：按采购额<strong>10%</strong>，年度最高<strong>300万元</strong></li>
@@ -1153,16 +1153,16 @@
       </ul>
     </div>
     <div class="border border-slate-100 rounded-xl p-4">
-      <div class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-users text-green-500"></i> 人才与税收</div>
-      <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
+      <div class="font-bold text-base text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-users text-green-500"></i> 人才与税收</div>
+      <ul class="text-base text-gray-600 space-y-1.5 list-disc list-inside">
         <li>顶尖人才购房补贴最高<strong>500万元</strong> + 子女入学绿色通道</li>
         <li>青年人才每月最高<strong>2000元</strong>租房补贴，最长<strong>3年</strong></li>
         <li>研发费用加计扣除 + 高新企业优惠，十年综合税负降低约<strong>40%</strong></li>
       </ul>
     </div>
     <div class="border border-slate-100 rounded-xl p-4 md:col-span-2">
-      <div class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-building-o text-orange-500"></i> 租金与办公成本</div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-600">
+      <div class="font-bold text-base text-gray-800 mb-2 flex items-center gap-2"><i class="fa fa-building-o text-orange-500"></i> 租金与办公成本</div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-base text-gray-600">
         <div class="bg-slate-50 rounded-lg p-2.5 sm:col-span-2">
           <div class="font-semibold text-gray-700 mb-1">通用园区政策</div>
           <div>• 部分园区最高<strong>1500万元</strong>办公用房补贴</div>
@@ -1172,7 +1172,7 @@
       </div>
     </div>
   </div>
-  <div class="mt-4 bg-slate-50 rounded-xl p-3 text-xs text-gray-600">
+  <div class="mt-4 bg-slate-50 rounded-xl p-3 text-base text-gray-600">
     <p class="font-bold text-gray-700 mb-1"><i class="fa fa-lightbulb-o text-yellow-500 mr-1"></i>申报建议</p>
     <p>1. 政策按照"从高不重复"原则执行，具体需经徐汇区相关部门认定</p>
     <p>2. 建议看房时向招商方索取书面政策说明，并确认是否协助对接徐汇区科委</p>
@@ -1181,7 +1181,7 @@
 </div>
 
 <!-- 底部 -->
-<div class="text-center text-xs text-gray-400 py-6">
+<div class="text-center text-base text-gray-400 py-6">
   <p class="font-medium text-gray-500">MX · 上海总部选址考察 · 2026年4月23日</p>
   <p class="mt-1">星扬西岸中心 vs 龙华万科中心 · 选址对比分析报告</p>
 </div>
@@ -1374,21 +1374,21 @@ document.addEventListener('keydown', function(e) {
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-gray-800">${d.name}</h4>
-                                        <p class="text-xs text-gray-500">${d.markets.length} 个子市场</p>
+                                        <p class="text-base text-gray-500">${d.markets.length} 个子市场</p>
                                     </div>
                                 </div>
                                 <div class="text-right">
-                                    <span class="px-2 py-1 ${d.typeColor} rounded-full text-xs font-medium">${d.typeLabel}</span>
-                                    <div class="mt-1 text-sm font-semibold text-gray-700">¥${d.avgRent}<span class="text-xs text-gray-400">/㎡/月</span></div>
+                                    <span class="px-2 py-1 ${d.typeColor} rounded-full text-base font-medium">${d.typeLabel}</span>
+                                    <div class="mt-1 text-base font-semibold text-gray-700">¥${d.avgRent}<span class="text-base text-gray-400">/㎡/月</span></div>
                                 </div>
                             </div>
                             <div class="flex items-center justify-center mt-2 text-gray-400">
-                                <i id="districtChevron-${i}" class="fa fa-chevron-down chevron text-sm"></i>
+                                <i id="districtChevron-${i}" class="fa fa-chevron-down chevron text-base"></i>
                             </div>
                         </div>
                         <div id="districtContent-${i}" class="district-content">
                             <div class="px-4 pb-4">
-                                <div class="text-xs text-gray-400 mb-2">总存量: ${totalStock.toFixed(0)}万㎡</div>
+                                <div class="text-base text-gray-400 mb-2">总存量: ${totalStock.toFixed(0)}万㎡</div>
                                 <div class="space-y-2">
                                     ${d.markets.map((m, mi) => `
                                         <div class="border border-gray-100 rounded-lg overflow-hidden">
@@ -1397,14 +1397,14 @@ document.addEventListener('keydown', function(e) {
                                                     <div class="flex items-center">
                                                         <span class="w-3 h-3 rounded-full mr-2" style="background:${m.color}"></span>
                                                         <span class="font-medium text-gray-800">${m.name}</span>
-                                                        <span class="ml-2 px-1.5 py-0.5 text-xs rounded ${m.type === 'core' ? 'bg-red-50 text-red-600' : 'bg-green-50 text-green-600'}">${m.typeLabel}</span>
+                                                        <span class="ml-2 px-1.5 py-0.5 text-base rounded ${m.type === 'core' ? 'bg-red-50 text-red-600' : 'bg-green-50 text-green-600'}">${m.typeLabel}</span>
                                                     </div>
-                                                    <div class="text-right text-sm">
+                                                    <div class="text-right text-base">
                                                         <span class="font-semibold text-gray-700">¥${m.rent}</span>
-                                                        <i id="marketChevron-${i}-${mi}" class="fa fa-chevron-down chevron text-gray-400 text-xs ml-2"></i>
+                                                        <i id="marketChevron-${i}-${mi}" class="fa fa-chevron-down chevron text-gray-400 text-base ml-2"></i>
                                                     </div>
                                                 </div>
-                                                <div class="flex gap-3 mt-1 text-xs text-gray-500">
+                                                <div class="flex gap-3 mt-1 text-base text-gray-500">
                                                     <span><i class="fa fa-pie-chart mr-1"></i>空置 ${m.vacancy}%</span>
                                                     <span><i class="fa fa-database mr-1"></i>存量 ${m.stock}万㎡</span>
                                                     <span><i class="fa fa-wrench mr-1"></i>物业 ¥${m.propFee}</span>
@@ -1412,13 +1412,13 @@ document.addEventListener('keydown', function(e) {
                                             </div>
                                             <div id="marketDetail-${i}-${mi}" class="market-detail">
                                                 <div class="px-3 pb-3 space-y-2">
-                                                    <div class="p-3 bg-gray-50 rounded-lg text-sm">
+                                                    <div class="p-3 bg-gray-50 rounded-lg text-base">
                                                         <p class="text-gray-700"><i class="fa fa-location-arrow mr-1 text-blue-500"></i><strong>位置：</strong>${m.location}</p>
                                                     </div>
-                                                    <div class="p-3 bg-gray-50 rounded-lg text-sm">
+                                                    <div class="p-3 bg-gray-50 rounded-lg text-base">
                                                         <p class="text-gray-700"><i class="fa fa-info-circle mr-1 text-orange-500"></i><strong>特点：</strong>${m.features}</p>
                                                     </div>
-                                                    <div class="p-3 bg-indigo-50 rounded-lg text-sm">
+                                                    <div class="p-3 bg-indigo-50 rounded-lg text-base">
                                                         <p class="text-indigo-700"><i class="fa fa-rocket mr-1"></i><strong>AI企业推荐：</strong>${m.aiRec}</p>
                                                     </div>
                                                 </div>
@@ -1440,9 +1440,9 @@ document.addEventListener('keydown', function(e) {
                 <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                     <div class="flex items-center justify-between mb-2">
                         <h4 class="font-bold text-gray-800">${e.name}</h4>
-                        <span class="px-2 py-0.5 bg-green-50 text-green-600 rounded text-xs">${e.district}</span>
+                        <span class="px-2 py-0.5 bg-green-50 text-green-600 rounded text-base">${e.district}</span>
                     </div>
-                    <div class="grid grid-cols-3 gap-2 text-xs text-gray-500 mb-2">
+                    <div class="grid grid-cols-3 gap-2 text-base text-gray-500 mb-2">
                         <div class="text-center p-2 bg-gray-50 rounded">
                             <div class="font-semibold text-gray-700">¥${e.rent}</div>
                             <div>元/㎡/月</div>
@@ -1456,7 +1456,7 @@ document.addEventListener('keydown', function(e) {
                             <div>存量</div>
                         </div>
                     </div>
-                    <p class="text-sm text-gray-600">${e.feature}</p>
+                    <p class="text-base text-gray-600">${e.feature}</p>
                 </div>
             `).join('');
         }
