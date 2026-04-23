@@ -111,6 +111,19 @@
   .rec-warn { background:#fee2e2; color:#991b1b; }
 
 
+
+/* Lightbox */
+.lightbox-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; display: none; align-items: center; justify-content: center; padding: 20px; }
+.lightbox-overlay.active { display: flex; }
+.lightbox-overlay img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.lightbox-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 2rem; cursor: pointer; opacity: 0.8; transition: opacity 0.2s; }
+.lightbox-close:hover { opacity: 1; }
+.lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); color: white; font-size: 2rem; cursor: pointer; opacity: 0.6; transition: opacity 0.2s; padding: 10px; }
+.lightbox-nav:hover { opacity: 1; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+.lightbox-counter { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 0.875rem; opacity: 0.8; }
+
 </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -525,6 +538,90 @@
       </ul>
     </div>
     <div class="mb-4">
+      <div class="section-title text-base mb-3"><i class="fa fa-image text-green-600"></i> 实地考察照片（2026/4/23）</div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_01.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_02.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_03.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_04.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_05.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_06.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_07.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_08.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_09.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_10.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_11.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openLightbox(this)">
+          <img src="images/wanke_12.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer overflow-hidden rounded-xl col-span-2 md:col-span-1" onclick="openLightbox(this)">
+          <img src="images/wanke_13.jpeg" class="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105" alt="龙华万科中心">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <i class="fa fa-search-plus text-white opacity-0 group-hover:opacity-100 text-xl transition-opacity"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4">
       <div class="flex items-center justify-between mb-2">
         <span class="section-title text-base mb-0"><i class="fa fa-map-marker text-red-500"></i> 位置与周边</span>
         <a class="amap-link" href="https://ditu.amap.com/search?query=恒基西岸星扬中心" target="_blank"><i class="fa fa-location-arrow"></i> 高德导航</a>
@@ -567,16 +664,7 @@
         </div>
       </div>
     </div>
-    <div>
-      <div class="section-title text-base mb-2"><i class="fa fa-check-square-o text-green-600"></i> 现场必查项</div>
-      <div class="space-y-2">
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认遗留装修质量</span>：检查空调管道、电路、墙面、地面是否完好，估算二次改造费用</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">实测得房率</span>：携带卷尺测量实际可用面积，确认公摊比例</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认空调加时政策</span>：周末/晚间是否供冷？加时费如何计算？</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">查看产权证明</span>：确认出租方为大业主还是代理，要求出示授权文件</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认AI政策适用性</span>：向招商确认是否属于西岸智慧谷扶持范围，能否协助对接徐汇区科委</div></label>
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -694,16 +782,7 @@
         </div>
       </div>
     </div>
-    <div>
-      <div class="section-title text-base mb-2"><i class="fa fa-check-square-o text-green-600"></i> 现场必查项</div>
-      <div class="space-y-2">
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认装修交付标准</span>：万科精装交付的具体标准、工期、材料品牌，对比整栋自持企业的装修方案</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">实测楼层净高和柱距</span>：确认4.2米层高、完成吊顶后净高2.9米是否属实，柱距是否影响工位布局</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认露台使用权限</span>：约100㎡露台的具体位置、改造限制、是否计入租赁面积</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认南区商业连通情况</span>：转换梯是否已开通，日常餐饮便利性</div></label>
-        <label class="check-item flex items-start gap-2.5 p-2.5 rounded-lg border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">咨询AI产业政策申报窗口</span>：确认企业注册后能否享受区科委"一站式"服务及人才公寓配套</div></label>
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -765,26 +844,9 @@
   </div>
 </div>
 
-<!-- 通用检查清单 -->
-<div id="checklist" class="bg-white rounded-2xl card-shadow p-6">
-  <div class="section-title mb-4"><i class="fa fa-shield text-indigo-600"></i> 通用看房必查清单</div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium text-red-600">查看不动产权证书原件</span>，确认用途为"商业/办公"，核查是否存在抵押或查封</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium text-red-600">确认出租方身份</span>：大业主直租/代理/二房东？二房东需审查原始合同及转租授权</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">索要《费用明细确认单》</span>：明确租金是否含税、物业费包含范围、空调供应时段、加时费标准</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">现场拍照/录像留存</span>：墙面、地面、门窗、水电表读数、空调状态、消防设施</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">实测面积和得房率</span>：用卷尺测量或查看平面图，计算真实人均可用面积</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认工商注册可行性</span>：向物业或市场监管部门核实能否办理营业执照</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">争取合同条款</span>：免租期、租金递增上限（≤3%）、退租复原标准、提前解约条件</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">观察物业运营状态</span>：电梯等待时间、公区清洁度、安保态度。可随机询问现有租户</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">考察周边配套</span>：餐饮、便利店、银行、酒店、咖啡是否在步行5分钟范围内</div></label>
-    <label class="check-item flex items-start gap-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 cursor-pointer"><div class="check-circle"><i class="fa fa-check"></i></div><input type="checkbox" class="hidden" onchange="toggleCheck(this)"><div class="text-sm text-gray-700"><span class="font-medium">确认AI产业政策适用性</span>：要求招商方提供书面政策说明，确认是否协助对接区科委</div></label>
-  </div>
-</div>
-
 <!-- 底部 -->
 <div class="text-center text-xs text-gray-400 py-6">
-  <p class="font-medium text-gray-500">MX · 上海总部选址考察 · 2026年4月22日</p>
+  <p class="font-medium text-gray-500">MX · 上海总部选址考察 · 2026年4月23日</p>
   <p class="mt-1">建议考察顺序：恒基星扬 → 龙华万科</p>
 </div>
 
@@ -794,6 +856,59 @@
 </div>
 
 <script>
+
+// Lightbox
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  if (!img) return;
+  lightboxImages = Array.from(document.querySelectorAll('.grid img')).filter(i => i.src && i.src.includes('wanke_'));
+  lightboxIndex = lightboxImages.indexOf(img);
+  showLightboxImage();
+  const overlay = document.getElementById('lightbox');
+  if (overlay) overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById('lightbox');
+  if (overlay) overlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function showLightboxImage() {
+  const overlayImg = document.getElementById('lightbox-img');
+  const counter = document.getElementById('lightbox-counter');
+  if (overlayImg && lightboxImages[lightboxIndex]) {
+    overlayImg.src = lightboxImages[lightboxIndex].src;
+    overlayImg.alt = lightboxImages[lightboxIndex].alt || '';
+  }
+  if (counter) {
+    counter.textContent = (lightboxIndex + 1) + ' / ' + lightboxImages.length;
+  }
+}
+
+function nextLightbox() {
+  lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+  showLightboxImage();
+}
+
+function prevLightbox() {
+  lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+  showLightboxImage();
+}
+
+document.addEventListener('keydown', function(e) {
+  const overlay = document.getElementById('lightbox');
+  if (!overlay || !overlay.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') nextLightbox();
+  if (e.key === 'ArrowLeft') prevLightbox();
+});
+
+
 // ===== Page 1 Scripts =====
 
         // ===== Data =====
@@ -1197,6 +1312,16 @@ function switchTab(tab) {
   window.scrollTo(0, 0);
 }
 </script>
+
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox-overlay" onclick="if(event.target===this)closeLightbox()">
+  <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+  <div class="lightbox-nav lightbox-prev" onclick="event.stopPropagation();prevLightbox()">&#10094;</div>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-nav lightbox-next" onclick="event.stopPropagation();nextLightbox()">&#10095;</div>
+  <div id="lightbox-counter" class="lightbox-counter"></div>
+</div>
 
 </body>
 </html>
